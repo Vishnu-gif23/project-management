@@ -11,7 +11,7 @@ const FinalPreview = () =>{
 
 
     return(
-        <div className="container mt-4">
+        <div className="container mt-4 mb-2">
             <div className="row">
 
                 <div className="col-xl-6 mb-5">
@@ -25,7 +25,7 @@ const FinalPreview = () =>{
                                     <tr><td> Date Of Birth </td> <td> {basicdata.dob} </td></tr>
                                     <tr><td> Married </td> <td> {basicdata.married} </td></tr>
                                     <tr><td> Profile Status </td> <td> {basicdata.profilestatus} </td></tr>
-                                    <tr><td colSpan={2}> <b> About Me: </b> {basicdata.about} </td></tr>
+                                    <tr><td> <b> About Me </b> </td><td> {basicdata.about} </td></tr>
                                 </tbody>
                             </table>
                         </div>

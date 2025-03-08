@@ -1,6 +1,7 @@
 import LeftNav from "./navigation";
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
+import swal from "sweetalert";
 
 const Basic = () =>{
     let basicdata = useSelector( state=>state.MyBasic );
@@ -24,7 +25,7 @@ const Basic = () =>{
         };
         let mydata = {type:"basic", info:userinfo};
         dispatch(mydata);
-        alert("Your basic details saved successfully...");
+        swal("Save Success", "Your basic details saved successfully...", "success");
     }
 
     return(
@@ -47,7 +48,7 @@ const Basic = () =>{
 
                                     <div className="mb-4 col-xl-6">
                                     <label className="mb-2"> Date Of Birth</label>
-                                        <input type="text" className="form-control"
+                                        <input type="date" className="form-control"
                                         onChange={obj=>setDob(obj.target.value)} value={dob}/>
                                     </div>
 
