@@ -1,7 +1,7 @@
 const MyExperience = (state, action) =>{
     
     let data = {
-        "total":"Hi",
+        "total":"",
         "about":""
     };
 

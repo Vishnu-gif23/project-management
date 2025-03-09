@@ -1,7 +1,7 @@
 const MySkill = (state, action) =>{
     
     let data = {
-        "skill":"I am good"
+        "skill":""
     };
 
     let skillData = Object.assign( data, state);

@@ -1,7 +1,7 @@
 const MyProject = ( state, action) =>{
     
     let data = {
-        "name":"Vram",
+        "name":"",
         "details":"",
         "technology":"",
         "url":""
